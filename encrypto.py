@@ -1,4 +1,4 @@
-ascii = {
+sifre_bir = {
     ' ': "20",
     '!': "21",
     '"': "22",
@@ -97,8 +97,8 @@ ascii = {
 giris = input("metniniz: ");
 sonuc = "";
 for harf in giris:
-    sonuc = sonuc + ascii[harf];
-mors = {
+    sonuc = sonuc + sifre_bir[harf];
+sifre_iki = {
     '0': "-----",
     '1': ".----",
     '2': "..---",
@@ -119,5 +119,5 @@ mors = {
 giris = sonuc;
 sonuc = "";
 for harfler in giris:
-    sonuc = sonuc + mors[harfler];
+    sonuc = sonuc + sifre_iki[harfler];
 print("oluşan metin: ",sonuc);
