@@ -1,4 +1,4 @@
-sifre_bir = {
+ascii = {
     ' ': "20",
     '!': "21",
     '"': "22",
@@ -97,7 +97,7 @@ sifre_bir = {
 giris = input("metniniz: ");
 sonuc = "";
 for harf in giris:
-    sonuc = sonuc + sifre_bir[harf];
+    sonuc = sonuc + ascii[harf];
 mors = {
     '0': "-----",
     '1': ".----",
