@@ -120,4 +120,17 @@ giris = sonuc;
 sonuc = "";
 for harfler in giris:
     sonuc = sonuc + sifre_iki[harfler];
-print("oluşan metin: ",sonuc);
+sifre_uc = {
+    '.': '0',
+    '-': '1'
+    }
+giris = sonuc;
+sonuc = "";
+for hr in giris:
+    sonuc = sonuc + sifre_uc[hr];
+binary = sonuc;
+decimal = 0;
+for digit in binary:
+    decimal = decimal*2 + int(digit);
+sonuc = decimal;
+print (sonuc);
